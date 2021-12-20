@@ -289,7 +289,7 @@ section:nth-child(even){
     color: var(--light-color);
     padding:1rem 0;
     font-size: 1.5rem;
-    line-height: 1.8;
+    line-height: 2.8;
 }
 
 .about .row .content h3{

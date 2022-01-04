@@ -436,15 +436,15 @@ section:nth-child(even){
     padding:1rem 4rem;
 }
 
+/* booking css ends */
+
+/* review css starts */
+
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:2rem;
 }
-
-/* booking css ends */
-
-/* review css starts */
 
 .review .box-container .box{
     border:var(--border);

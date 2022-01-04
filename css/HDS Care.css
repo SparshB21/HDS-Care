@@ -303,7 +303,7 @@ section:nth-child(even){
 .about .row .content h3{
     text-align: center;
     font-size: 4.5rem;
-    color:var(--black);
+    color: var(--black);
     padding: 1rem 0;
     text-shadow: var(--text-shadow);
 }

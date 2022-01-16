@@ -196,48 +196,6 @@ section:nth-child(even){
 
 /* w3 schools drop down ends */
 
-/* cover css starts */
-
-/* .cover{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    padding-top: 10rem;
-}
-
-.cover .image{
-    width: 100%;
-    background-size: cover;
-    flex:1 1 45rem;
-    background-position: center;
-    background-size: cover;
-    overflow:visible;
-}
-
-.cover .image img{
-    width: 100%;
-    background-size: cover;
-}
-
-.cover .content{
-    flex:1 1 45rem;
-}
-
-.cover .content h1{
-    font-size: 8rem;
-    color:var(--black);
-    text-align: center;
-    line-height: 0.8;
-    text-shadow: var(--text-shadow);
-}
-
-.cover .content span{
-    color:var(--green);
-} */
-
-/* cover css ends */
-
 /* content css starts */
 
 .about .content1{

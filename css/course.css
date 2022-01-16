@@ -311,45 +311,9 @@ section:nth-child(even){
     justify-content: center;
 }
 
-/* modules css ends */
-
-/* w3 schools drop down starts */
-
-/* .modules .dropdown .dropbtn {
-    background-color:#fff;
-    color: var(--light-color);
-    padding: 0 15px;
-    font-size: 1.72rem ;
-    border: none;
-  }
-  
-.modules .dropdown {
-    position: relative;
-  }
-  
-.modules .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-.modules .dropdown-content a {
-    color: var(--light-color);
-    padding: 12px 20px;
-    text-decoration: none;
-    display: block;
-  }
-  
-.modules .dropdown-content a:hover {background-color: #ddd;}
-
-.modules .dropdown:hover .dropdown-content {display: block;}
-
-.modules .dropdown:hover .dropbtn {color: var(--green);} */
-
-/* w3 schools drop down ends */
+.modules .module .btn #pay{
+    
+}
 
 /* modules css ends */
 

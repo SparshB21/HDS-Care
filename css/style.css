@@ -155,52 +155,6 @@ section:nth-child(even){
 
 /* w3 schools drop down ends */
 
-/* header css starts */
-
-/* dropdown menu starts */
-
-/* .navbar ul{
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-    float: right;
-    margin-right: 30px;
-}
-
-.navbar ul li{
-    position: relative;
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar ul li a{
-    display: block;
-    padding: 8px 15px;
-    color: white;
-    text-decoration: none;
-}
-
-.header .navbar a:hover{
-    color: var(--green);
-}
-
-.navbar ul ul{
-    position:absolute;
-    top:90px;
-    display: none;
-}
-
-.navbar ul li:hover > ul{
-    display: block;
-}
-
-.navbar ul ul li {
-    width:150px;
-    float: none;
-    display: list-item;
-    position: relative;
-} */
-
 /* dropdown menu ends */
 
 #menu-btn{
@@ -439,43 +393,6 @@ section:nth-child(even){
 .book .row form .btn{
     padding:1rem 4rem;
 }
-
-/* #status{
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-#status.success
-{
-    background-color: var(--green);
-    animation: status 2s ease forwards;
-}
-
-#status.error
-{
-    background-color: rgba(209, 34, 34, 0.87);
-    color: white;
-    animation: status 2s ease forwards;
-}
-
-@keyframes status{
-    0%{
-        opacity:1;
-        pointer-events: all;
-    }
-    90%{
-        opacity: 1;
-        pointer-events: all;
-    }
-    100%{
-        opacity: 0;
-        pointer-events: none;
-    }
-} */
 
 /* booking css ends */
 

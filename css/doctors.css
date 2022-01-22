@@ -222,6 +222,10 @@ section:nth-child(even){
     flex:1 1 45rem;
 }
 
+.details .img2{
+    flex:1 1 45rem; 
+}
+
 .details .doc1{
     flex:1 1 45rem;
 }

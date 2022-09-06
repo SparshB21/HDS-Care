@@ -185,13 +185,13 @@
         </div>
 
         <div class="box">
-            <img src="image/Dr.Akash Goel.jpeg" alt="">
+            <img src="image/profile.jpg" alt="">
             <h3>akash goel</h3>
             <span>MBBS, MS (Ortho), DNB (ortho) <br> Ortho expert </span>
         </div>
 
         <div class="box">
-            <img src="image/Dr.Madhavi Goel.jpeg" alt="">
+            <img src="image/profile.jpg" alt="their is an image">
             <h3>madhavi goel</h3>
             <span>DBS, M.Sc (FA) <br> Ortho expert </span>
         </div>
@@ -214,20 +214,32 @@
             <img src="image/book-img.svg" alt="">
         </div>
 
-        <form onsubmit="sendEmail(); reset(); returnfalse ;" >
+        <form onsubmit="sendEmail(); reset(); returnfalse() ;" >
             <h3>book appointment</h3>
-            <input type="text" required placeholder="Name" name="name" class="box">
-            <input type="number" required placeholder="Phone Number" name="phone number" class="box">
-            <input type="email" required placeholder="Email" name="email" class="box">
+
+            <input type="text" required placeholder="Name" name="name" class="box" id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
+
+            <input type="number" required placeholder="Phone Number" name="phone number" class="box" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+
+            <input type="email" required placeholder="Email" name="email" class="box" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+
             <select name="card_type" name="card_type" required>
                 <option value="">Select</option>
                 <option value="Hair Care">Hair Care</option>
                 <option value="Dental Care">Dental Care</option>
                 <option value="Skin Care">Skin Care</option>
             </select>
-            <input type="issue" required placeholder="Issue" name="issue" class="box">
+
+            <textarea placeholder="Enter the message" rows="5" class="box" id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
+
             <input type="date" required name="date" class="box">
-            <input type="submit" value="book now" onclick="hi()" required class="btn">
+
+            <input type="submit" value="book now" onclick="return validateForm()" required class="btn">
+            <span id="submit-error"></span>
             <!-- <a href="https://forms.gle/YPEBL1b1qAcF7cr98">Email</a> -->
         </form>
 
@@ -397,24 +409,6 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
-<script>https://smtpjs.com/v3/smtp.js</script>
-<script>
-    function hi(){
-        alert("It is done !!");
-    }
-    // function sendEmail(){
-    //     Email.send({
-    //     Host : "smtp.elasticemail.com",
-    //     Username : "sparshb21@gmail.com",
-    //     Password : "2C01D7A1E1D768E93424ACEF6C1F4682A881",
-    //     To : 'mirrorforlife21@gmail.com',
-    //     From : document.getElementById("email").value,
-    //     Subject : "New Contact Form",
-    //     Body : "And this is the body"
-    // }).then(
-    // message => alert(message)
-    // );
-// }
-</script>
+<script>https//smtpjs.com/v3/smtp.js</script>
 </body>
 </html>

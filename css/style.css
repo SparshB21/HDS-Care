@@ -257,6 +257,7 @@ section:nth-child(even){
 
 .about .row .image{
     flex:1 1 45rem;
+    /* float: left; */
 }
 
 .about .row .image img{
@@ -265,6 +266,7 @@ section:nth-child(even){
 
 .about .row .content{
     flex:1 1 45rem;
+    /* float: right; */
 }
 
 .about .row .content h3{
@@ -388,6 +390,16 @@ section:nth-child(even){
     color: var(--black);
     text-transform: none;
     padding: 1rem;
+}
+
+.book .row form span{
+    /* display:absolute; */
+    float: right;
+    /* display: flex; */
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
 }
 
 .book .row form .btn{

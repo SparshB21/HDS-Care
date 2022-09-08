@@ -161,13 +161,13 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="image/Dr.Kaushal Gangil.jpeg" alt="">
+            <img src="image/profile.jpg" alt="">
             <h3>kaushal gangil</h3>
             <span>BDS, MDS, PGDCC, AOMSI <br> Hair Transplant Surgeon <br> Cosmetologist <br> Maxillo Facial Surgeon</span>
         </div>
 
         <div class="box">
-            <img src="image/Dr.Apeksha Gangil.jpeg" alt="">
+            <img src="image/profile.jpg" alt="">
             <h3>apeksha gangil</h3>
             <span>BDS, FIFA <br> Cer. Endodontist <br> cer. orthodontist <br> Cer. laser surgeon</span>
         </div>
@@ -179,7 +179,7 @@
         </div>
 
         <div class="box">
-            <img src="image/Dr.Radhika Gupta.jpeg" alt="">
+            <img src="image/profile.jpg" alt="">
             <h3>radhika gupta</h3>
             <span>BDS, M.Sc (FA)</span>
         </div>
@@ -226,11 +226,11 @@
             <input type="email" required placeholder="Email" name="email" class="box" id="contact-email" onkeyup="validateEmail()">
             <span id="email-error"></span>
 
-            <select name="card_type" name="card_type" required>
-                <option value="">Select</option>
-                <option value="Hair Care">Hair Care</option>
-                <option value="Dental Care">Dental Care</option>
-                <option value="Skin Care">Skin Care</option>
+            <select name="card_type" name="card_type" id="field-name" required onkeyup="validateField()">
+                <option value="" class="field-name" >Select</option>
+                <option value="Hair Care" class="field-name" >Hair Care</option>
+                <option value="Dental Care" class="field-name" >Dental Care</option>
+                <option value="Skin Care" class="field-name" >Skin Care</option>
             </select>
 
             <textarea placeholder="Enter the message" rows="5" class="box" id="contact-message" onkeyup="validateMessage()"></textarea>
@@ -240,7 +240,6 @@
 
             <input type="submit" value="book now" onclick="return validateForm()" required class="btn">
             <span id="submit-error"></span>
-            <!-- <a href="https://forms.gle/YPEBL1b1qAcF7cr98">Email</a> -->
         </form>
 
     </div>

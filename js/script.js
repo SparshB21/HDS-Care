@@ -101,12 +101,6 @@ function validateForm(){
     }
     else{
         var name = document.getElementById('contact-name').value;
-        alert("This is me " + nameError);
+        alert("This is me " + name);
     } 
 }
-
-// function validateField(){
-//    var field = document.getElementById('field-name').value;
-
-//    alert(field + 'is your field !!');
-// }

@@ -403,13 +403,6 @@ section:nth-child(even){
     color: #16a085;
 }
 
-.book .row form .field-name{
-    /* border-radius: 30px; */
-    color:var(--green);
-    background-color : var(--light-color);
-}
-
-
 .book .row form .btn{
     padding:1rem 4rem;
 }

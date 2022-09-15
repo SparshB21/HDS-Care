@@ -75,7 +75,7 @@ function validateEmail(){
 
 function validateMessage(){
     var message = document.getElementById('contact-message').value;
-    var required = 30;
+    var required = 20;
     var left = required - message.length;
 
     if(left>0){
@@ -96,8 +96,13 @@ function validateForm(){
         submitError.style.color = 'red';
         submitError.innerHTML = 'Please fix error to submit';
         setTimeout(function(){submitError.style.display = 'none';}, 3000);
+        alert("Fill properly");
         return false;
     }
+    else{
+        var name = document.getElementById('contact-name').value;
+        alert("This is me " + nameError);
+    } 
 }
 
 // function validateField(){

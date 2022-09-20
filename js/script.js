@@ -2,6 +2,7 @@ var nameError = document.getElementById('name-error');
 var phoneError = document.getElementById('phone-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
+var dateError = document.getElementById('date-error');
 var submitError = document.getElementById('submit-error');
 var fieldname = document.getElementById('field-name');
 
@@ -28,10 +29,10 @@ function validateName(){
 function validatePhone(){
     var phone = document.getElementById('contact-phone').value;
 
-    if(phone.length==0)
-    {phoneError.innerHTML = 'Phone no. is required';
-    phoneError.style.color = 'red';
-    return false;
+    if(phone.length==0){
+        phoneError.innerHTML = 'Phone no. is required';
+        phoneError.style.color = 'red';
+        return false;
 }
 
     if(phone.length!=10){
@@ -90,6 +91,23 @@ function validateMessage(){
 
 }
 
+function validateDate(){
+    var date = document.getElementById('contact-date').value;
+    var recent = 25-09-2022;
+
+    if(recent == date){
+        dateError.innerHTML = "This is correct";
+        dateError.style.color = '#16a085';
+    }
+
+    else{
+        dateError.innerHTML = "This is not correct";
+        dateError.style.color = "red";
+        return false;
+    }
+
+}
+
 function validateForm(){
     if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage()){
         submitError.style.display = 'block';
@@ -101,6 +119,6 @@ function validateForm(){
     }
     else{
         var name = document.getElementById('contact-name').value;
-        alert("This is me " + name);
+        alert("Hello, " + name + " 🖐");
     } 
 }

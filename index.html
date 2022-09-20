@@ -208,7 +208,7 @@
 
     <h1 class="heading"> <span>book</span> now </h1>    
 
-    <div class="row">
+    <div class="row"> 
 
         <div class="image">
             <img src="image/book-img.svg" alt="">
@@ -236,7 +236,8 @@
             <textarea placeholder="Enter the message" rows="5" class="box" id="contact-message" onkeyup="validateMessage()"></textarea>
             <span id="message-error"></span>
 
-            <input type="date" required name="date" class="box">
+            <input type="date" required name="date" class="box" id="contact-date" onkeyup="validateDate()">
+            <span id="date-error"></span>
 
             <input type="submit" value="book now" onclick="return validateForm()" required class="btn">
             <span id="submit-error"></span>

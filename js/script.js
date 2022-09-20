@@ -92,24 +92,25 @@ function validateMessage(){
 }
 
 function validateDate(){
-    var date = document.getElementById('contact-date').value;
-    var recent = 25-09-2022;
-
-    if(recent == date){
-        dateError.innerHTML = "This is correct";
-        dateError.style.color = '#16a085';
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;   //January is 0!
+    var yyyy = today.getFullYear();
+        
+    if (dd < 10) {
+      dd = '0' + dd
     }
-
-    else{
-        dateError.innerHTML = "This is not correct";
-        dateError.style.color = "red";
-        return false;
+    
+    if (mm < 10) {
+      mm = '0' + mm
     }
-
+    
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById('contact-date').setAttribute("min", today);
 }
 
 function validateForm(){
-    if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage()){
+    if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage() || !validateDate()){
         submitError.style.display = 'block';
         submitError.style.color = 'red';
         submitError.innerHTML = 'Please fix error to submit';

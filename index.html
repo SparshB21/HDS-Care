@@ -226,7 +226,7 @@
             <input type="email" required placeholder="Email" name="email" class="box" id="contact-email" onkeyup="validateEmail()">
             <span id="email-error"></span>
 
-            <select name="card_type" name="card_type" id="field-name" required onkeyup="validateField()">
+            <select name="card_type" name="card_type" id="field-name" required onclick="validateField()">
                 <option value="" class="field-name" >Select</option>
                 <option value="Hair Care" class="field-name" >Hair Care</option>
                 <option value="Dental Care" class="field-name" >Dental Care</option>
@@ -236,7 +236,7 @@
             <textarea placeholder="Enter the message" rows="5" class="box" id="contact-message" onkeyup="validateMessage()"></textarea>
             <span id="message-error"></span>
 
-            <input type="date" required name="date" class="box" id="contact-date" onkeyup="validateDate()">
+            <input type="date" required name="date" class="box" id="contact-date" onclick="validateDate()">
             <span id="date-error"></span>
 
             <input type="submit" value="book now" onclick="return validateForm()" required class="btn">

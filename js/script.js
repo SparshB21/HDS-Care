@@ -4,7 +4,7 @@ var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
 var dateError = document.getElementById('date-error');
 var submitError = document.getElementById('submit-error');
-var fieldname = document.getElementById('field-name');
+// var fieldname = document.getElementsByClassName('field-name');
 
 function validateName(){
     var name = document.getElementById('contact-name').value;
@@ -52,6 +52,22 @@ function validatePhone(){
     return true;
 
 }
+
+// function validateField(){
+//     var field = document.getElementsByClassName('field-name').value;
+
+//     if( field == null || field == "Select")
+//     {
+//         fieldError.innerHTML = "Please fill it";
+//         fieldError.style.color = "red";
+//         return false;
+//     }
+
+//     fieldError.innerHTML = "✔";
+//     fieldError.style.color = "#16a085";
+//     return true;
+    
+// }
 
 function validateEmail(){
     var email = document.getElementById('contact-email').value;

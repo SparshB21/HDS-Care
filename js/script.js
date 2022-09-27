@@ -32,6 +32,7 @@ function validatePhone(){
     if(phone.length==0){
         phoneError.innerHTML = 'Phone no. is required';
         phoneError.style.color = 'red';
+        // phoneError.style.borderColor = 'red'; // PROBLEM: Want bordercolor to be red when error arise.
         return false;
 }
 
@@ -86,7 +87,6 @@ function validateEmail(){
 
     emailError.innerHTML = '✔';
     emailError.style.color = '#16a085';
-
     return true;
 }
 
@@ -108,7 +108,8 @@ function validateMessage(){
 }
 
 function validateDate(){
-    var today = new Date();
+    
+    var today;
     var dd = today.getDate();
     var mm = today.getMonth() + 1;   //January is 0!
     var yyyy = today.getFullYear();
@@ -121,17 +122,19 @@ function validateDate(){
       mm = '0' + mm
     }
     
-    today = yyyy + '-' + mm + '-' + dd;
+    today = dd + '-' + mm + '-' + yyyy;
+    // today = yyyy + '-' + mm + '-' + dd;
+    // date.split("-").reverse().join("-");
     document.getElementById('contact-date').setAttribute("min", today);
 }
 
 function validateForm(){
     if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage() || !validateDate()){
-        submitError.style.display = 'block';
+        submitError.style.display ='block';
         submitError.style.color = 'red';
         submitError.innerHTML = 'Please fix error to submit';
         setTimeout(function(){submitError.style.display = 'none';}, 3000);
-        alert("Fill properly");
+        // alert("Fill properly");
         return false;
     }
     else{

@@ -80,9 +80,9 @@
 
     <div class="content">
         <h3>your beauty is beautiful...</h3>
-        <p> <span>Healthy Skin</span> is a reflection of overall wellness!!
-            <br> <span>Healthy Teeth</span> is a reflection of beatiful smile!!
-            <br> <span>Healthy Hair</span> is a reflection of confidence and flawless nature!!
+        <p> <span>Healthy Skin</span> is a reflection of overall wellness !!
+            <br> <span>Healthy Teeth</span> is a reflection of beautiful smile !!
+            <br> <span>Healthy Hair</span> is a reflection of confidence and flawless nature !!
         </p>
         <a href="#book" class="btn"> book an appointment <span class="fas fa-chevron-right"></span> </a>
     </div>
@@ -217,7 +217,8 @@
         <form onsubmit="sendEmail(); reset(); returnfalse() ;" >
             <h3>book appointment</h3>
 
-            <input type="text" required placeholder="Name" name="name" class="box" id="contact-name" onkeyup="validateName()">
+            <div class="main">
+                <input type="text" required placeholder="Name" name="name" class="box" id="contact-name" onkeyup="validateName()">
             <span id="name-error"></span>
 
             <input type="number" required placeholder="Phone Number" name="phone number" class="box" id="contact-phone" onkeyup="validatePhone()">
@@ -227,8 +228,8 @@
             <span id="email-error"></span>
 
             <select name="card_type" name="card_type" id="field-name" required onclick="validateField()">
-                <option value="" class="field-name" >Select</option>
-                <option value="Hair Care" class="field-name" >Hair Care</option>
+                <!-- <option value="" class="field-name" >Select</option> -->
+                <option value="Hair Care" class="field-name" selected >Hair Care</option>
                 <option value="Dental Care" class="field-name" >Dental Care</option>
                 <option value="Skin Care" class="field-name" >Skin Care</option>
             </select>
@@ -236,11 +237,12 @@
             <textarea placeholder="Enter the message" rows="5" class="box" id="contact-message" onkeyup="validateMessage()"></textarea>
             <span id="message-error"></span>
 
-            <input type="date" required name="date" class="box" id="contact-date" onclick="validateDate()">
+            <input type="date" required name="date" class="box" id="contact-date" placeholder="dd-mm-yyyy" onclick="validateDate()">
             <span id="date-error"></span>
+            </div>
 
-            <input type="submit" value="book now" onclick="return validateForm()" required class="btn">
-            <span id="submit-error"></span>
+            <div class="submit"><input type="submit" value="book now" onclick="return validateForm()" required class="btn">
+                <span id="submit-error"></span></div>
         </form>
 
     </div>
